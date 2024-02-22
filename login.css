@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://unctad.org/sites/default/files/2021-08/2021-08-03_commentary_tourism_1200x675.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+small a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    width: 300px;
+    backdrop-filter: blur(2px);
+    border: solid rgba(255, 255, 255, 0.052);
+    background-color: rgba(0, 0, 0, 0.266);
+    border-radius: 10px;
+    font-weight: bold;
+}
+input{
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+    color: white;
+}
+small{
+    color: white;
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+*{
+  margin: 0px;
+}
+.cd__main{
+    height: 60%;
+}
+.container1 {
+  height: 100%;
+  width: 100%;
+}
+.card-home {
+  background-color: #101d4f;
+
+  border-radius: 10px;
+  transition: transform 400ms;
+  opacity: 0.5;
+
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-active {
+  z-index: 1;
+}
+
+.swiper-slide-active .card {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+}
+
+@media (max-height: 400px) {
+  .header {
+    margin: 40px 0 0 0;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 10px;
+  }
+  .quote-container {
+    padding: 5px 20px 20px 20px;
+  }
+  .quote-icon {
+    width: 75px;
+    height: 75px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    transform: translate(-50px, -50px);
+  }
+}

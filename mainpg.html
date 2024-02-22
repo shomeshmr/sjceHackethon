@@ -1,0 +1,482 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="mainpg.css">
+    <link rel="stylesheet" href="place.css">
+          <!-- Style CSS -->
+          <link rel="stylesheet" href="./css/style.css">
+          <!-- Demo CSS (No need to include it into your project) -->
+          <link rel="stylesheet" href="./css/demo.css">
+          <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Logo</h1>
+            <ul class="desktop-view">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mainpg.html">Main Page</a></li>
+                <li><a href="/direction_map/index.html">Map</a></li>
+                <li><a href="login.html">Login/SignUp</a></li>
+                <li>
+                  <select id="stateSelect">
+                    <option value="" disabled selected>Select a state</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option selected value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                
+                </li>
+                <li class="indLogo"></li>
+            </ul>
+            <nav class=" navbar-dark bg-dark" id="sidebar">
+                <div class="container-fluid">
+                  <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="mobile-close btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="mobile-view">
+                            <li class="indLogo"></li>
+
+                            <li>
+                                <select id="stateSelect">
+                                    <option value="" disabled selected>Select a state</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Ladakh">Ladakh</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option selected value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>
+                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="mainpg.html">Main Page</a></li>
+                            <li><a href="/direction_map/index.html">Map</a></li>
+                            <li><a href="login.html">Login/SignUp</a></li>
+
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </nav>
+    </header>
+    <main>
+        <section id="main" class="section1">
+            <div class="preference">
+                <div class="options">
+                    <input type="radio" id="radio1" name="radios">
+                    <label for="radio1" class="radio"><img src="/icons/flight.png" alt="Radio Image"></label>
+                    <h6 for="radio1">Flight</h6>
+                </div>
+                <div class="options">
+                    <input type="radio" id="radio2" name="radios">
+                    <label for="radio2" class="radio"><img src="/icons/bus.png" alt="Radio Image"></label>
+                    <h6 for="radio2">Bus</h6>
+                </div>
+                <div class="options">
+                    <input type="radio" id="radio3" name="radios">
+                    <label for="radio3" class="radio"><img src="icons/train.webp" alt="Radio Image"></label>
+                    <h6 for="radio3">Train</h6>
+                </div>
+                <div class="options">
+                    <input type="radio" id="radio4" name="radios">
+                    <label for="radio4" class="radio"><img src="/icons/car.png" alt="Radio Image"></label>
+                    <h6 for="radio4">Car</h6>
+                </div>
+            </div>
+            <div class="input">
+                <select class="districtSelect">
+                    <option value="">From</option>
+                    <option value="Ariyalur">Ariyalur</option>
+                    <option value="Chengalpattu">Chengalpattu</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Cuddalore">Cuddalore</option>
+                    <option value="Dharmapuri">Dharmapuri</option>
+                    <option value="Dindigul">Dindigul</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Kallakurichi">Kallakurichi</option>
+                    <option value="Kanchipuram">Kanchipuram</option>
+                    <option value="Kanyakumari">Kanyakumari</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Krishnagiri">Krishnagiri</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Nagapattinam">Nagapattinam</option>
+                    <option value="Namakkal">Namakkal</option>
+                    <option value="Nilgiris">Nilgiris</option>
+                    <option value="Perambalur">Perambalur</option>
+                    <option value="Pudukkottai">Pudukkottai</option>
+                    <option value="Ramanathapuram">Ramanathapuram</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Sivaganga">Sivaganga</option>
+                    <option value="Tenkasi">Tenkasi</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                    <option value="Theni">Theni</option>
+                    <option value="Thoothukudi">Thoothukudi</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Tirupathur">Tirupathur</option>
+                    <option value="Tiruppur">Tiruppur</option>
+                    <option value="Tiruvallur">Tiruvallur</option>
+                    <option value="Tiruvannamalai">Tiruvannamalai</option>
+                    <option value="Tiruvarur">Tiruvarur</option>
+                    <option value="Vellore">Vellore</option>
+                    <option value="Viluppuram">Viluppuram</option>
+                    <option value="Virudhunagar">Virudhunagar</option>
+                </select>
+
+                <select class="districtSelect" id="toDistrict">
+                    <option value="">To</option>
+                    <option value="Ariyalur">Ariyalur</option>
+                    <option value="Chengalpattu">Chengalpattu</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Cuddalore">Cuddalore</option>
+                    <option value="Dharmapuri">Dharmapuri</option>
+                    <option value="Dindigul">Dindigul</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Kallakurichi">Kallakurichi</option>
+                    <option value="Kanchipuram">Kanchipuram</option>
+                    <option value="Kanyakumari">Kanyakumari</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Krishnagiri">Krishnagiri</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Nagapattinam">Nagapattinam</option>
+                    <option value="Namakkal">Namakkal</option>
+                    <option value="Nilgiris">Nilgiris</option>
+                    <option value="Perambalur">Perambalur</option>
+                    <option value="Pudukkottai">Pudukkottai</option>
+                    <option value="Ramanathapuram">Ramanathapuram</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Sivaganga">Sivaganga</option>
+                    <option value="Tenkasi">Tenkasi</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                    <option value="Theni">Theni</option>
+                    <option value="Thoothukudi">Thoothukudi</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Tirupathur">Tirupathur</option>
+                    <option value="Tiruppur">Tiruppur</option>
+                    <option value="Tiruvallur">Tiruvallur</option>
+                    <option value="Tiruvannamalai">Tiruvannamalai</option>
+                    <option value="Tiruvarur">Tiruvarur</option>
+                    <option value="Vellore">Vellore</option>
+                    <option value="Viluppuram">Viluppuram</option>
+                    <option value="Virudhunagar">Virudhunagar</option>
+                </select>
+                <input type="tel" name="" id="" placeholder="No of People">
+            </div>
+            <div class="btn1">
+                <button class="btn btn-primary btn-lg" onclick="search()" type="submit">Search</button>
+            </div>
+        </section>
+
+
+        <section id="Ariyalur" class="district container-fluid ">
+            <span id="Ariyalur" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">KARAIVETTI BIRD SANCTUARY</h5>
+                        <p class="card-text">VETTAKUDI – KARAIVETTI BIRD SANCTUARY The Karaivetti Birds Sanctuary with an area of 453.71 ha. has been notified under section…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">GANGAIKONDA CHOLAPURAM</h5>
+                        <p class="card-text">Ariyalur is best known for the Gangaikondacholisvarar temple in Gangaikondacholapuram, the biggest temple constructed during the reign of Rajendra–I in…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section id="Chengalpattu" class="district container-fluid ">
+            <span id="Chengalpattu" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Vedanthangal Bird Sanctuary</h5>
+                        <p class="card-text">It is one of the major Water Bird Sanctuaries in India. of 25 Kms from Chengalpattu. The birds nest on…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Mamallapuram</h5>
+                        <p class="card-text">Mamallapuram The Ancient  Port City Mamalapuram (Mahabalipuram) is one of the important place to visit in Chengalpattu District. It was…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section id="Chennai" class="district container-fluid ">
+
+            <span id="Chennai" class="row row-container d-flex flex-row justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Valluvar Kottam</h5>
+                        <p class="card-text">The Valluvar Kottam, located in Chennai, is one such historical monument which is dedicated to the well-known intellectual poet, philosopher…</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Gandhi Mandapam</h5>
+                        <p class="card-text">The Government of Tamil Nadu has established Gandhi Mandapam and Museum in Guindy, Chennai as a symbol of praising and…</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Government Museum</h5>
+                        <p class="card-text">Government Museum, Chennai Location: Pantheon Road, Egmore, Chennai, Tamil Nadu Established in 1851, Government Museum of Chennai is popular as…</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Marina Beach</h5>
+                        <p class="card-text">Marina beach in Chennai along the Bay of Bengal is India’s longest and world’s second longest beach. This predominantly sandy…</p>
+                    </div>
+                </div>
+                
+
+            </span>
+        </section>
+
+        <section id="Coimbatore" class="district container-fluid ">
+            <span id="Coimbatore" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Valparai Hill Station</h5>
+                        <p class="card-text">Valparai Hill station is located above 3500 feet height from the sea level on the Anamalai mountain range of the…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Aliyar Dam</h5>
+                        <p class="card-text">Aliyar Dam is a charming location surrounded by Annamali Hills with wonderful natural views. It is located between Pollachi and…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">DamKovai Coutralam</h5>
+                        <p class="card-text">Kovai Kutralam is a scenic spot with a gentle waterfall originating on the Siruvani hill ranges. It is located on…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section id="Dharmapuri" class="district container-fluid ">
+            <span id="Dharmapuri" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Theerthamalai</h5>
+                        <p class="card-text">Theerthamalai is an  important scacred place in Harur taluk of Dharmapuri District.  Shri Theerthagirishwarar Temple is located at the top of…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Hogenakkal Water Falls</h5>
+                        <p class="card-text">Hogenakal is situated at the borders of Karnataka at 46 kms from Dharmapuri. In Hogenakal the  river Cauvery enters into…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section id="Erode" class="district container-fluid ">
+            <span id="Erode" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Government Museum, Erode</h5>
+                        <p class="card-text">Address: Curator, Government Museum, V.O.C.Park Campus, Erode – 638 003. Erode Government Museum will appeal to culture buffs and history…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Birds Sanctuary, Vellode</h5>
+                        <p class="card-text">Birds Sanctuary, Vellode is about 15 kms from Erode. It is at a large lake surrounded with semi-dark bushes near…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Dams</h5>
+                        <p class="card-text">Bhavanisagar Dam is about 16 kms. from Sathyamangalam across the  river Bhavani.Kodiveri Dam is about 10 kms  from Gobichettipalayam and…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Bannari Amman Temple</h5>
+                        <p class="card-text">Bannari Amman Temple is 75 kms away from Erode and 10 kms distance from Sathyamangalam. It is the famous temple…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Murugan Temples</h5>
+                        <p class="card-text">Thindalmalai – is 5 kms from Erode Chennimalai – is about 30 kms. from Erode and 12 kms from Perundurai</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Bhavani Sangameshwarar Temple</h5>
+                        <p class="card-text">Sangameshwarar Temple, Bhavani is about 15 kms. from Erode. Confluence of three rivers by name Cauvery, Bhavani and invisible Amudha…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+        <section id="Kallakurichi" class="district container-fluid ">
+            <span id="Kallakurichi" class="row row-container d-flex flex-row justify-content-center">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/karaivetti bird sanctuary.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Sri Veeratteswarar Koil, Thirukkoilur</h5>
+                        <p class="card-text">Moolavar : Veeratteswarar Utshavar : Anthakashuvath Moorthy Ambal : Periya Nayagi, Shivanathavalli Holy Tree : Sarakkontrai Holy Water : Thenpennai…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Aadhi Thiruvarangam</h5>
+                        <p class="card-text">Main Deity : Ranganatha Swamy(Lord Vishnu). Ambal : Rangavalli Thayar. Holy Water : Chandra Pushkarani, Thenpennai river. Temple Timings :…</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/Toorist img/ariyalur/gangaikonda cholapuram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <h5 class="card-title">Kalvarayan Hills</h5>
+                        <p class="card-text">The Kalrayan Hills are a major range of hills situated in the Eastern Ghats of the southern Indian state of…</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+
+    </main>
+        
+
+    <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js'></script>
+          <!-- Script JS -->
+          <script src="./js/script.js"></script>
+          <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
